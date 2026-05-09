@@ -1,0 +1,80 @@
+Category,Benchmark,InternVL3-78B,GLM-4.5V (106B-A12B),Skywork_R1V2-38B,Qwen3.6-27B,Qwen3.6-35B-A3B,Notes
+General VQA,MMBench V1.1 (test-en),88.7,88.2,,,,
+General VQA,MMBench V1.1 (dev-en),89.0,,,92.3,92.8,"Qwen3.6 reports as MMBenchEN-DEV-v1.1"
+General VQA,MMBench V1.1 (CN),,88.3,,,,
+General VQA,MMStar,72.5,75.3,,81.4,,
+General VQA,BLINK (Val),66.3,65.3,,,,
+General VQA,MUIRBENCH,64.5,75.3,,,,"InternVL3 calls it MuirBench"
+General VQA,HallusionBench,59.1,65.4,,,69.8,
+General VQA,ZeroBench (sub),,23.4,,,34.4,
+General VQA,GeoBench,,79.7,,,,
+General VQA,MME,2549.8,,,,,"Scale: 0-2800"
+General VQA,MMVet,81.3,,,,,"InternVL3 Table 5"
+General VQA,MMVet v2,70.0,,,,,"InternVL3 Table 5"
+General VQA,MMHal,3.85,,,,,"Scale: 0-5"
+General VQA,CRPE,79.2,,,,,"InternVL3 Table 5"
+General VQA,POPE,90.3,,,,,"InternVL3 Table 5"
+General VQA,RealWorldQA,68.0,,68.9,84.1,85.3,
+General VQA,MME-RealWorld,78.0,,,,,"InternVL3 Table 4"
+General VQA,WildVision,65.4,,,,,"InternVL3 Table 4"
+General VQA,R-Bench,73.6,,,,,"InternVL3 Table 4"
+General VQA,SimpleVQA,,,,56.1,58.9,"Qwen3.6 only"
+General VQA,VlmsAreBlind,,,,97.0,,"Qwen3.6-27B only"
+STEM,MMMU (Val),72.2,75.4,73.6,82.9,81.7,
+STEM,MMMU Pro,,65.2,52.0,75.8,75.3,
+STEM,MathVista (testmini),79.0,84.6,74.0,87.4,86.4,
+STEM,MathVision,43.1,65.6,49.0,,,"R1V2 uses mini split"
+STEM,MathVerse,51.0,72.1,,,,"InternVL3: vision-only split"
+STEM,DynaMath,35.1,53.9,,85.6,,"InternVL3: worst-case; Qwen3.6 likely avg"
+STEM,WeMath,46.1,68.8,,,,
+STEM,LogicVista,55.9,62.4,,,,
+STEM,AI2D,89.7,88.1,81.3,,92.7,
+STEM,OlympiadBench,,,62.6,,,"R1V2 only"
+Multi-Image,Mantis-Eval,79.3,,,,,"InternVL3 Table 4"
+Multi-Image,MMIU,60.4,,,,,"InternVL3 Table 4"
+Multi-Image,MMT-Bench,73.2,,,,,"InternVL3 Table 4"
+Multi-Image,MIRB,64.3,,,,,"InternVL3 Table 4"
+OCR / Chart / Document,ChartQA,84.3,,79.0,,,"InternVL3 Table 3; R1V2 Section 3.3"
+OCR / Chart / Document,ChartQAPro,,64.0,,,,"GLM Table 2"
+OCR / Chart / Document,ChartMuseum,,55.3,,,,"GLM Table 2"
+OCR / Chart / Document,TextVQA (val),85.8,,,,,"InternVL3 Table 3"
+OCR / Chart / Document,DocVQA (test),95.4,,,,,"InternVL3 Table 3"
+OCR / Chart / Document,InfoVQA (test),86.5,,,,,"InternVL3 Table 3"
+OCR / Chart / Document,OCRBench,906,86.5,,89.4,,"InternVL3: out of 1000; GLM/Qwen: out of 100"
+OCR / Chart / Document,SEED-2-Plus,71.9,,,,,"InternVL3 Table 3"
+OCR / Chart / Document,CharXiv (reasoning),46.0,,,78.4,78.0,
+OCR / Chart / Document,CharXiv (descriptive),85.1,,,,,"InternVL3 Table 3"
+OCR / Chart / Document,CC-OCR,,,,81.2,81.9,"Qwen3.6 only"
+OCR / Chart / Document,OmniDocBench1.5,,,,,89.9,"Qwen3.6-35B-A3B only"
+OCR / Chart / Document,MMLongBench-Doc,,44.7,,,,"GLM Table 2"
+Visual Grounding,RefCOCO-avg (val),91.4,91.3,,92.5,92.0,
+Visual Grounding,TreeBench,,50.1,,,,"GLM Table 2"
+Visual Grounding,Ref-L4-test,,89.5,,,,"GLM Table 2"
+Visual Grounding,ODInW13,,,,,50.8,"Qwen3.6-35B-A3B only"
+Spatial Reasoning,OmniSpatial,,51.0,,,,"GLM Table 2"
+Spatial Reasoning,CV-Bench,,87.3,,,,"GLM Table 2"
+Spatial Reasoning,ERQA,,50.0,,62.5,,"Qwen3.6-27B reports higher"
+Spatial Reasoning,All-Angles Bench,,56.9,,,,"GLM Table 2"
+Spatial Reasoning,CountBench,,,,97.8,,"Qwen3.6-27B only"
+Spatial Reasoning,EmbSpatialBench,,,,84.6,84.3,"Qwen3.6 only"
+Spatial Reasoning,RefSpatialBench,,,,70.0,64.3,"Qwen3.6 only"
+GUI Agents,OSWorld,,35.8,,,,"GLM Table 2"
+GUI Agents,AndroidWorld,,57.0,,70.3,,"Qwen3.6-27B and GLM"
+GUI Agents,WebVoyager,,84.4,,,,"GLM Table 2"
+GUI Agents,Webquest-SingleQA,,76.9,,,,"GLM Table 2"
+GUI Agents,Webquest-MultiQA,,60.6,,,,"GLM Table 2"
+GUI Agents,V*,,,,94.7,,"Qwen3.6-27B only"
+Coding,Design2Code,,82.2,,,,"GLM Table 2"
+Coding,Flame-React-Eval,,82.5,,,,"GLM Table 2"
+Video,Video-MME (w/o sub),72.7,74.6,60.2,,82.5,
+Video,Video-MME (w/sub),75.7,80.7,,87.7,86.6,
+Video,MVBench,78.7,73.0,61.5,75.5,74.6,
+Video,MMBench-Video,1.81,,,,,"Scale: ~0-5 (GPT-based score)"
+Video,MLVU,79.5,,,86.6,86.2,
+Video,LongVideoBench,65.7,,,,,"InternVL3 Table 8"
+Video,LVBench,,53.8,,,71.4,"GLM and Qwen3.6-35B-A3B"
+Video,CG-Bench (clue),48.4,,,,,"InternVL3 Table 8"
+Video,CG-Bench (mirage),65.3,,,,,"InternVL3 Table 8"
+Video,MMVU,,68.7,,,,"GLM Table 2"
+Video,VideoMMMU,,72.4,,84.4,83.7,
+Video,MotionBench,,62.4,,,,"GLM Table 2"
