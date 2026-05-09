@@ -11,6 +11,9 @@
 
 \setbeamertemplate{navigation symbols}{}
 
+% Citation style: superscript-like bracketed number
+\newcommand{\citenum}[1]{{\scriptsize\color{gray!70!black}#1}}
+
 \begin{document}
 
 % Slide 1
@@ -35,7 +38,7 @@
 The stated goal of MMMU, the most cited vision benchmark, is to understand how close a model is to performing at the same level as ``skilled adults''.
 
 \vspace{1em}
-{\scriptsize Yue et al., ``MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI,'' CVPR 2024. Section 1 (Introduction).}
+\citenum{[1]}
 \vfill
 \end{frame}
 
@@ -128,7 +131,7 @@ The stated goal of MMMU, the most cited vision benchmark, is to understand how c
 \small Question: What percentage of the geese are oriented such that their body faces south on an 8-point compass? Give your answer to one decimal place.
 
 \vfill
-{\scriptsize Roberts et al., ``ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models,'' arXiv:2502.09696, 2025.}
+\citenum{[2]}
 \end{frame}
 
 % Slide 7 - Comparison table
@@ -156,7 +159,7 @@ ZeroBench & Medium & High \\
 \small ``We meticulously examine 150 randomly sampled error instances from GPT-4V's predictions. These instances are analyzed by expert annotators who identify the root causes of mispredictions based on their knowledge and the golden explanations if available.''
 
 \vfill
-{\scriptsize Yue et al., ``MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI,'' CVPR 2024.}
+\citenum{[1]}
 \end{frame}
 
 % Slide 9 - MMMU Pro vs ZeroBench bar chart
@@ -203,142 +206,152 @@ ZeroBench & Medium & High \\
 \end{tikzpicture}
 
 \vfill
-{\scriptsize Data from GLM-4.5V Technical Report (2025) and Qwen Team, ``Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All,'' 2026.}
+\citenum{[3, 4]}
 \end{frame}
 
 % Slide 11 - The Models (Timeline)
-% Proportional spacing: day 0 = Apr 11 2025, day 356 = Apr 2 2026
-% Scale: 13 units / 356 days, offset 0.5
-% InternVL3: day 0 -> x=0.5
-% Skywork R1V2: day 13 -> x=0.97
-% GLM-4.5V: day 122 -> x=4.96
-% GPT-5.4: day 328 -> x=12.48
-% Qwen3.6: day 356 -> x=13.50
+% Proportional spacing: day 0 = Aug 26 2025, day 240 = Apr 23 2026
+% Scale: 10 units / 240 days, offset 0.5
+% InternVL3.5: day 0 -> x=0.50
+% GLM-4.6V: day 105 -> x=4.88
+% Gemma-4: day 219 -> x=9.43 (offset -0.2 for spacing)
+% Qwen3.6: day 219 -> x=9.83 (offset +0.2 for spacing)
+% GPT-5.5: day 240 -> x=10.50
 \begin{frame}{The Models}
 \centering
 \begin{tikzpicture}
 % Timeline axis
-\draw[thick, ->, gray!70] (0,0) -- (14.5,0);
+\draw[thick, ->, gray!70] (0,0) -- (11.5,0);
 
-% Month tick marks (from Apr 11, 2025 baseline)
-% May 1 (day 20) = 1.23
-\draw[gray!40] (1.23,0.15) -- (1.23,-0.15);
-% Jun 1 (day 51) = 2.36
-\draw[gray!40] (2.36,0.15) -- (2.36,-0.15);
-% Jul 1 (day 81) = 3.46
-\draw[gray!40] (3.46,0.15) -- (3.46,-0.15);
-% Aug 1 (day 112) = 4.59
-\draw[gray!40] (4.59,0.15) -- (4.59,-0.15);
-% Sep 1 (day 143) = 5.72
-\draw[gray!40] (5.72,0.15) -- (5.72,-0.15);
-% Oct 1 (day 173) = 6.82
-\draw[gray!40] (6.82,0.15) -- (6.82,-0.15);
-% Nov 1 (day 203) = 7.91
-\draw[gray!40] (7.91,0.15) -- (7.91,-0.15);
-% Dec 1 (day 234) = 9.05
-\draw[gray!40] (9.05,0.15) -- (9.05,-0.15);
-% Jan 1 (day 265) = 10.18
-\draw[gray!40] (10.18,0.15) -- (10.18,-0.15);
-% Feb 1 (day 296) = 11.31
-\draw[gray!40] (11.31,0.15) -- (11.31,-0.15);
-% Mar 1 (day 324) = 12.33
-\draw[gray!40] (12.33,0.15) -- (12.33,-0.15);
-% Apr 1 (day 355) = 13.46
-\draw[gray!40] (13.46,0.15) -- (13.46,-0.15);
+% Month tick marks (from Aug 26, 2025 baseline, scale=10/240=0.04167)
+% Sep 1 (day 6) = 0.75
+\draw[gray!40] (0.75,0.15) -- (0.75,-0.15);
+% Oct 1 (day 36) = 2.00
+\draw[gray!40] (2.00,0.15) -- (2.00,-0.15);
+% Nov 1 (day 67) = 3.29
+\draw[gray!40] (3.29,0.15) -- (3.29,-0.15);
+% Dec 1 (day 97) = 4.54
+\draw[gray!40] (4.54,0.15) -- (4.54,-0.15);
+% Jan 1 (day 128) = 5.83
+\draw[gray!40] (5.83,0.15) -- (5.83,-0.15);
+% Feb 1 (day 159) = 7.13
+\draw[gray!40] (7.13,0.15) -- (7.13,-0.15);
+% Mar 1 (day 187) = 8.29
+\draw[gray!40] (8.29,0.15) -- (8.29,-0.15);
+% Apr 1 (day 218) = 9.58
+\draw[gray!40] (9.58,0.15) -- (9.58,-0.15);
 
-% Month labels (every other month to reduce clutter)
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (1.23,-0.18) {May};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (3.46,-0.18) {Jul};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (5.72,-0.18) {Sep};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (7.91,-0.18) {Nov};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (10.18,-0.18) {Jan};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (12.33,-0.18) {Mar};
+% Month labels
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (0.75,-0.18) {Sep};
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (2.00,-0.18) {Oct};
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (3.29,-0.18) {Nov};
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (4.54,-0.18) {Dec};
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (5.83,-0.18) {Jan};
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (7.13,-0.18) {Feb};
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (8.29,-0.18) {Mar};
+\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (9.58,-0.18) {Apr};
 
-% Year divider (Jan 1 2026)
-\draw[dashed, gray!50, thick] (10.18,-0.9) -- (10.18,3.8);
-\node[font=\small, gray] at (5.0,-1.1) {2025};
-\node[font=\small, gray] at (12.5,-1.1) {2026};
+% Year divider (Jan 1 2026, day 128 = 5.83)
+\draw[dashed, gray!50, thick] (5.83,-0.9) -- (5.83,3.8);
+\node[font=\small, gray] at (2.8,-1.1) {2025};
+\node[font=\small, gray] at (8.5,-1.1) {2026};
 
-% Model dots and labels (alternating tall/short stems)
+% Model dots and labels
 
-% InternVL3 - x=0.50 (tall)
+% InternVL3.5 - x=0.50 (tall)
 \fill[blue!70] (0.50,0) circle (4pt);
 \draw[blue!70, thick] (0.50,0) -- (0.50,2.8);
-\node[above, font=\small\bfseries, blue!70, align=center] at (0.50,2.8) {InternVL3\\[-0.2em]{\fontsize{6}{7}\selectfont 78B}};
-\node[below, font=\fontsize{5.5}{6.5}\selectfont, blue!70, rotate=45, anchor=north east] at (0.50,-0.25) {Apr 11};
+\node[above, font=\scriptsize\bfseries, blue!70, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (0.50,2.8) {InternVL3.5\\[-0.2em]{\fontsize{5}{6}\selectfont 241B-A28B}};
+\node[below, font=\fontsize{5}{6}\selectfont, blue!70, rotate=45, anchor=north east] at (0.50,-0.25) {Aug 26};
 
-% Skywork R1V2 - x=0.97 (short)
-\fill[red!70] (0.97,0) circle (4pt);
-\draw[red!70, thick] (0.97,0) -- (0.97,1.3);
-\node[above, font=\small\bfseries, red!70, align=center] at (0.97,1.3) {Skywork R1V2\\[-0.2em]{\fontsize{6}{7}\selectfont 38B}};
-\node[below, font=\fontsize{5.5}{6.5}\selectfont, red!70, rotate=45, anchor=north east] at (0.97,-0.25) {Apr 24};
+% GLM-4.6V - x=4.88 (short)
+\fill[green!60!black] (4.88,0) circle (4pt);
+\draw[green!60!black, thick] (4.88,0) -- (4.88,1.3);
+\node[above, font=\scriptsize\bfseries, green!60!black, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (4.88,1.3) {GLM-4.6V\\[-0.2em]{\fontsize{5}{6}\selectfont 106B}};
+\node[below, font=\fontsize{5}{6}\selectfont, green!60!black, rotate=45, anchor=north east] at (4.88,-0.25) {Dec 9};
 
-% GLM-4.5V - x=4.96 (tall)
-\fill[green!60!black] (4.96,0) circle (4pt);
-\draw[green!60!black, thick] (4.96,0) -- (4.96,2.8);
-\node[above, font=\small\bfseries, green!60!black, align=center] at (4.96,2.8) {GLM-4.5V\\[-0.2em]{\fontsize{6}{7}\selectfont 106B}};
-\node[below, font=\fontsize{5.5}{6.5}\selectfont, green!60!black, rotate=45, anchor=north east] at (4.96,-0.25) {Aug 11};
+% Gemma 4 - x=9.43 (tall)
+\fill[red!70] (9.43,0) circle (4pt);
+\draw[red!70, thick] (9.43,0) -- (9.43,2.8);
+\node[above, font=\scriptsize\bfseries, red!70, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (9.43,2.8) {Gemma 4\\[-0.2em]{\fontsize{5}{6}\selectfont 31B}};
+\node[below, font=\fontsize{5}{6}\selectfont, red!70, rotate=45, anchor=north east] at (9.43,-0.25) {Apr 2};
 
-% GPT-5.4 - x=12.48 (short)
-\fill[purple!70] (12.48,0) circle (4pt);
-\draw[purple!70, thick] (12.48,0) -- (12.48,1.3);
-\node[above, font=\small\bfseries, purple!70, align=center] at (12.48,1.3) {GPT-5.4\\[-0.2em]{\fontsize{6}{7}\selectfont Thinking}};
-\node[below, font=\fontsize{5.5}{6.5}\selectfont, purple!70, rotate=45, anchor=north east] at (12.48,-0.25) {Mar 5};
+% Qwen3.6 - x=9.83 (short)
+\fill[orange!80!black] (9.83,0) circle (4pt);
+\draw[orange!80!black, thick] (9.83,0) -- (9.83,1.3);
+\node[above, font=\scriptsize\bfseries, orange!80!black, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (9.83,1.3) {Qwen3.6\\[-0.2em]{\fontsize{5}{6}\selectfont 27B / 35B-A3B}};
+\node[below, font=\fontsize{5}{6}\selectfont, orange!80!black, rotate=45, anchor=north east] at (9.83,-0.25) {Apr 2};
 
-% Qwen3.6 - x=13.50 (tall)
-\fill[orange!80!black] (13.50,0) circle (4pt);
-\draw[orange!80!black, thick] (13.50,0) -- (13.50,2.8);
-\node[above, font=\small\bfseries, orange!80!black, align=center] at (13.50,2.8) {Qwen3.6\\[-0.2em]{\fontsize{6}{7}\selectfont 27B / 35B-A3B}};
-\node[below, font=\fontsize{5.5}{6.5}\selectfont, orange!80!black, rotate=45, anchor=north east] at (13.50,-0.25) {Apr 2};
+% GPT-5.5 - x=10.50 (medium height)
+\fill[purple!70] (10.50,0) circle (4pt);
+\draw[purple!70, thick] (10.50,0) -- (10.50,2.1);
+\node[above, font=\scriptsize\bfseries, purple!70, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (10.50,2.1) {GPT-5.5};
+\node[below, font=\fontsize{5}{6}\selectfont, purple!70, rotate=45, anchor=north east] at (10.50,-0.25) {Apr 23};
 
 \end{tikzpicture}
 \end{frame}
 
-% Slide 12 - Benchmark Coverage Table
-\begin{frame}{Benchmark Coverage -- Top 20}
+% Slide 12 - Benchmark Usage Table
+\begin{frame}{Benchmark Usage -- Top 20}
 \centering
 \newcommand{\Y}[1]{\cellcolor{green!15}#1}
 \newcommand{\N}{\cellcolor{gray!10}{\color{gray!40}--}}
 \renewcommand{\arraystretch}{1.15}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+ & \rotatebox{45}{\scriptsize MMMU Pro}
  & \rotatebox{45}{\scriptsize MMMU}
  & \rotatebox{45}{\scriptsize MathVista}
- & \rotatebox{45}{\scriptsize MVBench}
- & \rotatebox{45}{\scriptsize MMMU Pro}
- & \rotatebox{45}{\scriptsize RealWorldQA}
- & \rotatebox{45}{\scriptsize AI2D}
- & \rotatebox{45}{\scriptsize VideoMME}
- & \rotatebox{45}{\scriptsize VideoMME+sub}
- & \rotatebox{45}{\scriptsize RefCOCO}
- & \rotatebox{45}{\scriptsize MMBench-dev}
- & \rotatebox{45}{\scriptsize MMStar}
- & \rotatebox{45}{\scriptsize Hallusion}
- & \rotatebox{45}{\scriptsize MathVision}
- & \rotatebox{45}{\scriptsize DynaMath}
- & \rotatebox{45}{\scriptsize OCRBench}
  & \rotatebox{45}{\scriptsize CharXiv}
+ & \rotatebox{45}{\scriptsize RefCOCO}
+ & \rotatebox{45}{\scriptsize MMStar}
+ & \rotatebox{45}{\scriptsize RealWorldQA}
+ & \rotatebox{45}{\scriptsize DynaMath}
+ & \rotatebox{45}{\scriptsize AI2D}
+ & \rotatebox{45}{\scriptsize OCRBench}
+ & \rotatebox{45}{\scriptsize MVBench}
  & \rotatebox{45}{\scriptsize MLVU}
+ & \rotatebox{45}{\scriptsize LVBench}
  & \rotatebox{45}{\scriptsize VideoMMMU}
- & \rotatebox{45}{\scriptsize MMBench-test}
+ & \rotatebox{45}{\scriptsize MMBench-dev}
  & \rotatebox{45}{\scriptsize BLINK}
+ & \rotatebox{45}{\scriptsize MUIRBENCH}
+ & \rotatebox{45}{\scriptsize Hallusion}
+ & \rotatebox{45}{\scriptsize ZeroBench}
+ & \rotatebox{45}{\scriptsize SimpleVQA}
  \\
 \hline
-\textbf{InternVL3-78B}   & \Y{72.2} & \Y{79.0} & \Y{78.7} & \N       & \Y{68.0} & \Y{89.7} & \Y{72.7} & \Y{75.7} & \Y{91.4} & \Y{89.0} & \Y{72.5} & \Y{59.1} & \Y{43.1} & \Y{35.1} & \Y{906}  & \Y{46.0} & \Y{79.5} & \N       & \Y{88.7} & \Y{66.3} \\
+\textbf{GPT-5.5}          & \Y{81.2} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
 \hline
-\textbf{GLM-4.5V}        & \Y{75.4} & \Y{84.6} & \Y{73.0} & \Y{65.2} & \N       & \Y{88.1} & \Y{74.6} & \Y{80.7} & \Y{91.3} & \N       & \Y{75.3} & \Y{65.4} & \Y{65.6} & \Y{53.9} & \Y{86.5} & \N       & \N       & \Y{72.4} & \Y{88.2} & \Y{65.3} \\
+\textbf{Qwen3.6-27B}      & \Y{75.8} & \Y{82.9} & \Y{87.4} & \Y{78.4} & \Y{92.5} & \Y{81.4} & \Y{84.1} & \Y{85.6} & \N       & \N       & \Y{75.5} & \Y{86.6} & \N       & \Y{84.4} & \Y{92.3} & \N       & \N       & \N       & \N       & \Y{56.1} \\
 \hline
-\textbf{Skywork R1V2}    & \Y{73.6} & \Y{74.0} & \Y{61.5} & \Y{52.0} & \Y{68.9} & \Y{81.3} & \Y{60.2} & \N       & \N       & \N       & \N       & \N       & \Y{49.0} & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
+\textbf{Qwen3.6-35B-A3B}  & \Y{75.3} & \Y{81.7} & \Y{86.4} & \Y{78.0} & \Y{92.0} & \N       & \Y{85.3} & \N       & \Y{92.7} & \Y{89.4} & \Y{74.6} & \Y{86.2} & \Y{71.4} & \Y{83.7} & \Y{92.8} & \N       & \N       & \Y{69.8} & \Y{34.4} & \Y{58.9} \\
 \hline
-\textbf{Qwen3.6-27B}     & \Y{82.9} & \Y{87.4} & \Y{75.5} & \Y{75.8} & \Y{84.1} & \N       & \N       & \Y{87.7} & \Y{92.5} & \Y{92.3} & \Y{81.4} & \N       & \N       & \Y{85.6} & \Y{89.4} & \Y{78.4} & \Y{86.6} & \Y{84.4} & \N       & \N       \\
+\textbf{Gemma-4-31B}      & \Y{76.9} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
 \hline
-\textbf{Qwen3.6-35B-A3B} & \Y{81.7} & \Y{86.4} & \Y{74.6} & \Y{75.3} & \Y{85.3} & \Y{92.7} & \Y{82.5} & \Y{86.6} & \Y{92.0} & \Y{92.8} & \N       & \Y{69.8} & \N       & \N       & \N       & \Y{78.0} & \Y{86.2} & \Y{83.7} & \N       & \N       \\
+\textbf{GLM-4.6V}         & \Y{66.0} & \Y{76.0} & \Y{85.2} & \Y{63.2} & \Y{88.6} & \Y{75.9} & \N       & \Y{54.5} & \Y{88.8} & \Y{86.5} & \N       & \N       & \Y{59.5} & \Y{74.7} & \N       & \Y{65.5} & \Y{77.1} & \N       & \Y{25.8} & \N       \\
+\hline
+\textbf{InternVL3.5}      & \N       & \Y{77.7} & \Y{82.7} & \Y{48.3} & \Y{92.4} & \Y{77.9} & \Y{75.2} & \Y{46.5} & \Y{87.3} & \Y{907}  & \Y{76.5} & \Y{78.2} & \Y{67.1} & \N       & \N       & \Y{61.4} & \Y{47.5} & \Y{57.3} & \N       & \N       \\
 \hline
 \end{tabular}%
 }
+\vfill
+\citenum{[4, 5, 6, 7, 8]}
+\end{frame}
 
-\vspace{0.5em}
-{\scriptsize Sorted by number of models reporting. Green = reported; gray = not reported.\\OCRBench: InternVL3 scale is /1000, others /100.}
+% References
+\begin{frame}{References}
+\small
+\begin{enumerate}
+\item Yue et al., ``MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI,'' CVPR 2024.
+\item Roberts et al., ``ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models,'' arXiv:2502.09696, 2025.
+\item THUDM, ``GLM-4.5V Technical Report,'' 2025.
+\item Qwen Team, ``Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All,'' 2026.
+\item OpenAI, ``Introducing GPT-5.5,'' 2026.
+\item Google DeepMind, ``Gemma 4 Technical Report,'' 2026.
+\item THUDM, ``GLM-4.6V Technical Report,'' 2025.
+\item OpenGVLab, ``InternVL3.5 Technical Report,'' 2025.
+\end{enumerate}
 \end{frame}
 
 % Appendix - Links
