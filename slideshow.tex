@@ -14,6 +14,10 @@
 % Citation style: superscript-like bracketed number
 \newcommand{\citenum}[1]{{\scriptsize\color{gray!70!black}#1}}
 
+% Table cell helpers for benchmark usage
+\newcommand{\Y}[1]{\cellcolor{green!15}#1}
+\newcommand{\N}{\cellcolor{gray!10}{\color{gray!40}--}}
+
 \begin{document}
 
 % Slide 1
@@ -29,6 +33,76 @@
 \begin{itemize}
 \item Benchmark scores give a ten-thousand foot view of capability; this group is all about building more powerful and nuanced intuitions of capability
 \end{itemize}
+
+\vfill
+\begin{quote}
+``Become one with the data.''
+\end{quote}
+--- Andrej Karpathy, ``A Recipe for Training Neural Networks,'' 2019 \citenum{[10]}
+\end{frame}
+
+% Slide - The State of VLM Benchmarks
+\begin{frame}{The State of VLM Benchmarks}
+\centering
+\vfill
+\begin{quote}
+``While large language models with vision capabilities (VLMs), e.g., GPT-4o and Gemini-1.5 Pro, score high on many vision-understanding benchmarks, they are still struggling with low-level vision tasks that are easy to humans.''
+\end{quote}
+
+\vspace{1em}
+--- Rahmanzadehgervi et al., ``Vision Language Models Are Blind,'' 2024 \citenum{[9]}
+\vfill
+\end{frame}
+
+% Slide 11 - The Models (Timeline)
+% Generated as PNG by generate_timeline.py to avoid label overlaps
+\begin{frame}{The VLMS}
+\centering
+\adjustbox{max width=\textwidth, max height=0.85\textheight}{\includegraphics{timeline.png}}
+\end{frame}
+
+% Slide 12 - Benchmark Usage Table
+\begin{frame}{Benchmark Usage -- Top 20}
+\centering
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+ & \rotatebox{45}{\scriptsize MMMU Pro}
+ & \rotatebox{45}{\scriptsize MMMU}
+ & \rotatebox{45}{\scriptsize MathVista}
+ & \rotatebox{45}{\scriptsize CharXiv}
+ & \rotatebox{45}{\scriptsize RefCOCO}
+ & \rotatebox{45}{\scriptsize MMStar}
+ & \rotatebox{45}{\scriptsize RealWorldQA}
+ & \rotatebox{45}{\scriptsize DynaMath}
+ & \rotatebox{45}{\scriptsize AI2D}
+ & \rotatebox{45}{\scriptsize OCRBench}
+ & \rotatebox{45}{\scriptsize MVBench}
+ & \rotatebox{45}{\scriptsize MLVU}
+ & \rotatebox{45}{\scriptsize LVBench}
+ & \rotatebox{45}{\scriptsize VideoMMMU}
+ & \rotatebox{45}{\scriptsize MMBench-dev}
+ & \rotatebox{45}{\scriptsize BLINK}
+ & \rotatebox{45}{\scriptsize MUIRBENCH}
+ & \rotatebox{45}{\scriptsize Hallusion}
+ & \rotatebox{45}{\scriptsize ZeroBench}
+ & \rotatebox{45}{\scriptsize SimpleVQA}
+ \\
+\hline
+\textbf{GPT-5.5}          & \Y{81.2} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
+\hline
+\textbf{Qwen3.6-35B-A3B}  & \Y{75.3} & \Y{81.7} & \Y{86.4} & \Y{78.0} & \Y{92.0} & \N       & \Y{85.3} & \N       & \Y{92.7} & \Y{89.4} & \Y{74.6} & \Y{86.2} & \Y{71.4} & \Y{83.7} & \Y{92.8} & \N       & \N       & \Y{69.8} & \Y{34.4} & \Y{58.9} \\
+\hline
+\textbf{Gemma-4-31B}      & \Y{76.9} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
+\hline
+\textbf{GLM-4.6V}         & \Y{66.0} & \Y{76.0} & \Y{85.2} & \Y{63.2} & \Y{88.6} & \Y{75.9} & \N       & \Y{54.5} & \Y{88.8} & \Y{86.5} & \N       & \N       & \Y{59.5} & \Y{74.7} & \N       & \Y{65.5} & \Y{77.1} & \N       & \Y{25.8} & \N       \\
+\hline
+\textbf{InternVL3.5}      & \N       & \Y{77.7} & \Y{82.7} & \Y{48.3} & \Y{92.4} & \Y{77.9} & \Y{75.2} & \Y{46.5} & \Y{87.3} & \Y{907}  & \Y{76.5} & \Y{78.2} & \Y{67.1} & \N       & \N       & \Y{61.4} & \Y{47.5} & \Y{57.3} & \N       & \N       \\
+\hline
+\end{tabular}%
+}
+\vfill
+\citenum{[4, 5, 6, 7, 8]}
 \end{frame}
 
 % Slide 3
@@ -209,136 +283,6 @@ ZeroBench & Medium & High \\
 \citenum{[3, 4]}
 \end{frame}
 
-% Slide 11 - The Models (Timeline)
-% Proportional spacing: day 0 = Aug 26 2025, day 240 = Apr 23 2026
-% Scale: 10 units / 240 days, offset 0.5
-% InternVL3.5: day 0 -> x=0.50
-% GLM-4.6V: day 105 -> x=4.88
-% Gemma-4: day 219 -> x=9.43 (offset -0.2 for spacing)
-% Qwen3.6: day 219 -> x=9.83 (offset +0.2 for spacing)
-% GPT-5.5: day 240 -> x=10.50
-\begin{frame}{The Models}
-\centering
-\begin{tikzpicture}
-% Timeline axis
-\draw[thick, ->, gray!70] (0,0) -- (11.5,0);
-
-% Month tick marks (from Aug 26, 2025 baseline, scale=10/240=0.04167)
-% Sep 1 (day 6) = 0.75
-\draw[gray!40] (0.75,0.15) -- (0.75,-0.15);
-% Oct 1 (day 36) = 2.00
-\draw[gray!40] (2.00,0.15) -- (2.00,-0.15);
-% Nov 1 (day 67) = 3.29
-\draw[gray!40] (3.29,0.15) -- (3.29,-0.15);
-% Dec 1 (day 97) = 4.54
-\draw[gray!40] (4.54,0.15) -- (4.54,-0.15);
-% Jan 1 (day 128) = 5.83
-\draw[gray!40] (5.83,0.15) -- (5.83,-0.15);
-% Feb 1 (day 159) = 7.13
-\draw[gray!40] (7.13,0.15) -- (7.13,-0.15);
-% Mar 1 (day 187) = 8.29
-\draw[gray!40] (8.29,0.15) -- (8.29,-0.15);
-% Apr 1 (day 218) = 9.58
-\draw[gray!40] (9.58,0.15) -- (9.58,-0.15);
-
-% Month labels
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (0.75,-0.18) {Sep};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (2.00,-0.18) {Oct};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (3.29,-0.18) {Nov};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (4.54,-0.18) {Dec};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (5.83,-0.18) {Jan};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (7.13,-0.18) {Feb};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (8.29,-0.18) {Mar};
-\node[below, font=\fontsize{5}{6}\selectfont, gray, rotate=45, anchor=north east] at (9.58,-0.18) {Apr};
-
-% Year divider (Jan 1 2026, day 128 = 5.83)
-\draw[dashed, gray!50, thick] (5.83,-0.9) -- (5.83,3.8);
-\node[font=\small, gray] at (2.8,-1.1) {2025};
-\node[font=\small, gray] at (8.5,-1.1) {2026};
-
-% Model dots and labels
-
-% InternVL3.5 - x=0.50 (tall)
-\fill[blue!70] (0.50,0) circle (4pt);
-\draw[blue!70, thick] (0.50,0) -- (0.50,2.8);
-\node[above, font=\scriptsize\bfseries, blue!70, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (0.50,2.8) {InternVL3.5\\[-0.2em]{\fontsize{5}{6}\selectfont 241B-A28B}};
-\node[below, font=\fontsize{5}{6}\selectfont, blue!70, rotate=45, anchor=north east] at (0.50,-0.25) {Aug 26};
-
-% GLM-4.6V - x=4.88 (short)
-\fill[green!60!black] (4.88,0) circle (4pt);
-\draw[green!60!black, thick] (4.88,0) -- (4.88,1.3);
-\node[above, font=\scriptsize\bfseries, green!60!black, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (4.88,1.3) {GLM-4.6V\\[-0.2em]{\fontsize{5}{6}\selectfont 106B}};
-\node[below, font=\fontsize{5}{6}\selectfont, green!60!black, rotate=45, anchor=north east] at (4.88,-0.25) {Dec 9};
-
-% Gemma 4 - x=9.43 (tall)
-\fill[red!70] (9.43,0) circle (4pt);
-\draw[red!70, thick] (9.43,0) -- (9.43,2.8);
-\node[above, font=\scriptsize\bfseries, red!70, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (9.43,2.8) {Gemma 4\\[-0.2em]{\fontsize{5}{6}\selectfont 31B}};
-\node[below, font=\fontsize{5}{6}\selectfont, red!70, rotate=45, anchor=north east] at (9.43,-0.25) {Apr 2};
-
-% Qwen3.6 - x=9.83 (short)
-\fill[orange!80!black] (9.83,0) circle (4pt);
-\draw[orange!80!black, thick] (9.83,0) -- (9.83,1.3);
-\node[above, font=\scriptsize\bfseries, orange!80!black, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (9.83,1.3) {Qwen3.6\\[-0.2em]{\fontsize{5}{6}\selectfont 27B / 35B-A3B}};
-\node[below, font=\fontsize{5}{6}\selectfont, orange!80!black, rotate=45, anchor=north east] at (9.83,-0.25) {Apr 2};
-
-% GPT-5.5 - x=10.50 (medium height)
-\fill[purple!70] (10.50,0) circle (4pt);
-\draw[purple!70, thick] (10.50,0) -- (10.50,2.1);
-\node[above, font=\scriptsize\bfseries, purple!70, align=center, fill=white, inner sep=1.5pt, rounded corners=1pt] at (10.50,2.1) {GPT-5.5};
-\node[below, font=\fontsize{5}{6}\selectfont, purple!70, rotate=45, anchor=north east] at (10.50,-0.25) {Apr 23};
-
-\end{tikzpicture}
-\end{frame}
-
-% Slide 12 - Benchmark Usage Table
-\begin{frame}{Benchmark Usage -- Top 20}
-\centering
-\newcommand{\Y}[1]{\cellcolor{green!15}#1}
-\newcommand{\N}{\cellcolor{gray!10}{\color{gray!40}--}}
-\renewcommand{\arraystretch}{1.15}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
- & \rotatebox{45}{\scriptsize MMMU Pro}
- & \rotatebox{45}{\scriptsize MMMU}
- & \rotatebox{45}{\scriptsize MathVista}
- & \rotatebox{45}{\scriptsize CharXiv}
- & \rotatebox{45}{\scriptsize RefCOCO}
- & \rotatebox{45}{\scriptsize MMStar}
- & \rotatebox{45}{\scriptsize RealWorldQA}
- & \rotatebox{45}{\scriptsize DynaMath}
- & \rotatebox{45}{\scriptsize AI2D}
- & \rotatebox{45}{\scriptsize OCRBench}
- & \rotatebox{45}{\scriptsize MVBench}
- & \rotatebox{45}{\scriptsize MLVU}
- & \rotatebox{45}{\scriptsize LVBench}
- & \rotatebox{45}{\scriptsize VideoMMMU}
- & \rotatebox{45}{\scriptsize MMBench-dev}
- & \rotatebox{45}{\scriptsize BLINK}
- & \rotatebox{45}{\scriptsize MUIRBENCH}
- & \rotatebox{45}{\scriptsize Hallusion}
- & \rotatebox{45}{\scriptsize ZeroBench}
- & \rotatebox{45}{\scriptsize SimpleVQA}
- \\
-\hline
-\textbf{GPT-5.5}          & \Y{81.2} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
-\hline
-\textbf{Qwen3.6-27B}      & \Y{75.8} & \Y{82.9} & \Y{87.4} & \Y{78.4} & \Y{92.5} & \Y{81.4} & \Y{84.1} & \Y{85.6} & \N       & \N       & \Y{75.5} & \Y{86.6} & \N       & \Y{84.4} & \Y{92.3} & \N       & \N       & \N       & \N       & \Y{56.1} \\
-\hline
-\textbf{Qwen3.6-35B-A3B}  & \Y{75.3} & \Y{81.7} & \Y{86.4} & \Y{78.0} & \Y{92.0} & \N       & \Y{85.3} & \N       & \Y{92.7} & \Y{89.4} & \Y{74.6} & \Y{86.2} & \Y{71.4} & \Y{83.7} & \Y{92.8} & \N       & \N       & \Y{69.8} & \Y{34.4} & \Y{58.9} \\
-\hline
-\textbf{Gemma-4-31B}      & \Y{76.9} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
-\hline
-\textbf{GLM-4.6V}         & \Y{66.0} & \Y{76.0} & \Y{85.2} & \Y{63.2} & \Y{88.6} & \Y{75.9} & \N       & \Y{54.5} & \Y{88.8} & \Y{86.5} & \N       & \N       & \Y{59.5} & \Y{74.7} & \N       & \Y{65.5} & \Y{77.1} & \N       & \Y{25.8} & \N       \\
-\hline
-\textbf{InternVL3.5}      & \N       & \Y{77.7} & \Y{82.7} & \Y{48.3} & \Y{92.4} & \Y{77.9} & \Y{75.2} & \Y{46.5} & \Y{87.3} & \Y{907}  & \Y{76.5} & \Y{78.2} & \Y{67.1} & \N       & \N       & \Y{61.4} & \Y{47.5} & \Y{57.3} & \N       & \N       \\
-\hline
-\end{tabular}%
-}
-\vfill
-\citenum{[4, 5, 6, 7, 8]}
-\end{frame}
-
 % References
 \begin{frame}{References}
 \small
@@ -351,6 +295,8 @@ ZeroBench & Medium & High \\
 \item Google DeepMind, ``Gemma 4 Technical Report,'' 2026.
 \item THUDM, ``GLM-4.6V Technical Report,'' 2025.
 \item OpenGVLab, ``InternVL3.5 Technical Report,'' 2025.
+\item Rahmanzadehgervi et al., ``Vision Language Models Are Blind,'' arXiv:2407.06581, 2024.
+\item Karpathy, ``A Recipe for Training Neural Networks,'' \url{https://karpathy.github.io/2019/04/25/recipe/}, 2019.
 \end{enumerate}
 \end{frame}
 

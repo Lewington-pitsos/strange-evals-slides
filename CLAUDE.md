@@ -1,0 +1,1 @@
+Whenever we make changes to slideshow.tex we always render to slideshow.pdf unless asked otherwise

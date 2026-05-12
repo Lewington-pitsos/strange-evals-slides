@@ -1,22 +1,7 @@
-the text and multiple choice questions under the mmmu pro images does not make sense we must use the full text in each case, using much smaller font is ok but we need the full text
 
----
-
-
-add a new page to the slideshow which shows the usage of benchmarks
-
-next page:
-
-the models
-
-shows a timeline of the release date of the last 5 VLM models
-
-the benchmarks
-
-list the most recent 5 VLM releases (not including qwen 3 only qwen 3.6) and their release dates, you can see them listed already in multimodal_benchmarks.csv
-
-
-next page 
+1. read the second most popular
+2. read evals are blind
+3. add the chicken from the paper
 
 
 ---
