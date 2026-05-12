@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.17)  12 MAY 2026 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.17)  12 MAY 2026 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,24 +972,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 (./slideshow.aux)
 \openout1 = `slideshow.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1047,64 +1047,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (./slideshow.out) (./slideshow.out)
 \@outlinefile=\write5
 \openout5 = `slideshow.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 25.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 25.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 29.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 25.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 25.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 25.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 25.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 25.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 25.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 25.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 25.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 25.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 25.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 25.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 25.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 25.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 25.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 25.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 25.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 25.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 2
-5.
+9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 2
-5.
+9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 25.
+ut line 29.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1138,20 +1138,20 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 46.
+ut line 50.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1168,586 +1168,13 @@ thkerncmss.
 <timeline.png, id=35, 983.95605pt x 297.39105pt>
 File: timeline.png Graphic file (type png)
 <use timeline.png>
-Package pdftex.def Info: timeline.png  used on input line 66.
+Package pdftex.def Info: timeline.png  used on input line 70.
 (pdftex.def)             Requested size: 983.95366pt x 297.39032pt.
 
 
 [4
 
  <./timeline.png>]
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> green!\pct 
-                      !red!30
-l.112 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
 
 [5
 
@@ -1762,12 +1189,12 @@ File: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png  
-used on input line 163.
+used on input line 170.
 (pdftex.def)             Requested size: 367.37158pt x 264.98935pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 163.
+(Font)              size <7> substituted on input line 170.
 
 <../brokenevals-vlm/mmmu_pro/examples/263_image_0.png, id=55, 390.45876pt x 401
 .5pt>
@@ -1775,7 +1202,7 @@ File: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png  
-used on input line 163.
+used on input line 170.
 (pdftex.def)             Requested size: 390.4578pt x 401.49901pt.
 <../brokenevals-vlm/mmmu_pro/examples/152_image_0.png, id=56, 250.9375pt x 226.
 8475pt>
@@ -1783,7 +1210,7 @@ File: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png  
-used on input line 163.
+used on input line 170.
 (pdftex.def)             Requested size: 250.93687pt x 226.84694pt.
 <../brokenevals-vlm/mmmu_pro/examples/354_image_0.png, id=57, 966.61125pt x 292
 .09125pt>
@@ -1791,7 +1218,7 @@ File: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png  
-used on input line 163.
+used on input line 170.
 (pdftex.def)             Requested size: 966.6089pt x 292.09052pt.
 <../brokenevals-vlm/mmmu_pro/examples/402_image_0.png, id=58, 410.53375pt x 183
 .68625pt>
@@ -1799,7 +1226,7 @@ File: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png  
-used on input line 163.
+used on input line 170.
 (pdftex.def)             Requested size: 410.53275pt x 183.68578pt.
 
 
@@ -1814,31 +1241,31 @@ File: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png  
-used on input line 203.
+used on input line 210.
 (pdftex.def)             Requested size: 367.37158pt x 264.98935pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png  
-used on input line 203.
+used on input line 210.
 (pdftex.def)             Requested size: 390.4578pt x 401.49901pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png  
-used on input line 203.
+used on input line 210.
 (pdftex.def)             Requested size: 250.93687pt x 226.84694pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png  
-used on input line 203.
+used on input line 210.
 (pdftex.def)             Requested size: 966.6089pt x 292.09052pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png  
-used on input line 203.
+used on input line 210.
 (pdftex.def)             Requested size: 410.53275pt x 183.68578pt.
 
 
@@ -1848,40 +1275,85 @@ used on input line 203.
 <zerobench_geese.jpeg, id=70, 3337.46875pt x 2503.3525pt>
 File: zerobench_geese.jpeg Graphic file (type jpg)
 <use zerobench_geese.jpeg>
-Package pdftex.def Info: zerobench_geese.jpeg  used on input line 215.
+Package pdftex.def Info: zerobench_geese.jpeg  used on input line 222.
 (pdftex.def)             Requested size: 3337.46066pt x 2503.3464pt.
 
 
 [9
 
  <./zerobench_geese.jpeg>]
+<mmmu_error_analysis.jpeg, id=76, 303.35333pt x 243.73058pt>
+File: mmmu_error_analysis.jpeg Graphic file (type jpg)
+<use mmmu_error_analysis.jpeg>
+Package pdftex.def Info: mmmu_error_analysis.jpeg  used on input line 234.
+(pdftex.def)             Requested size: 303.35258pt x 243.72998pt.
+
 
 [10
 
-]
-<mmmu_error_analysis.jpeg, id=81, 303.35333pt x 243.73058pt>
-File: mmmu_error_analysis.jpeg Graphic file (type jpg)
-<use mmmu_error_analysis.jpeg>
-Package pdftex.def Info: mmmu_error_analysis.jpeg  used on input line 243.
-(pdftex.def)             Requested size: 303.35258pt x 243.72998pt.
+ <./mmmu_error_analysis.jpeg>]
+Package pgfplots info on input line 281: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
 
 
 [11
 
- <./mmmu_error_analysis.jpeg>]
-Package pgfplots info on input line 290: Using 'lua backend=false' for axis: x 
-coord trafo unsupported.
+]
+<vlm-are-blind/overview.png, id=88, 755.82375pt x 726.715pt>
+File: vlm-are-blind/overview.png Graphic file (type png)
+<use vlm-are-blind/overview.png>
+Package pdftex.def Info: vlm-are-blind/overview.png  used on input line 289.
+(pdftex.def)             Requested size: 755.8219pt x 726.71321pt.
+
+Overfull \vbox (1.66776pt too high) detected at line 289
+ []
+
 
 
 [12
 
-]
+ <./vlm-are-blind/overview.png>]
+<vlm-are-blind/scores.png, id=95, 421.575pt x 192.72pt>
+File: vlm-are-blind/scores.png Graphic file (type png)
+<use vlm-are-blind/scores.png>
+Package pdftex.def Info: vlm-are-blind/scores.png  used on input line 297.
+(pdftex.def)             Requested size: 421.57396pt x 192.71951pt.
+
 
 [13
 
-]
+ <./vlm-are-blind/scores.png>]
+<vlm-are-blind/later-results.png, id=103, 781.92125pt x 551.05875pt>
+File: vlm-are-blind/later-results.png Graphic file (type png)
+<use vlm-are-blind/later-results.png>
+Package pdftex.def Info: vlm-are-blind/later-results.png  used on input line 30
+5.
+(pdftex.def)             Requested size: 781.91934pt x 551.05739pt.
+
+Overfull \vbox (1.6745pt too high) detected at line 305
+ []
+
+
 
 [14
+
+ <./vlm-are-blind/later-results.png>]
+<vlm-are-blind/chicken.png, id=110, 316.18124pt x 580.1675pt>
+File: vlm-are-blind/chicken.png Graphic file (type png)
+<use vlm-are-blind/chicken.png>
+Package pdftex.def Info: vlm-are-blind/chicken.png  used on input line 320.
+(pdftex.def)             Requested size: 316.18047pt x 580.16606pt.
+
+
+[15
+
+ <./vlm-are-blind/chicken.png>]
+
+[16
+
+]
+
+[17
 
 ]
 \tf@nav=\write6
@@ -1907,11 +1379,11 @@ Package rerunfilecheck Info: File `slideshow.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36367 strings out of 473190
- 863192 string characters out of 5715800
- 1392109 words of memory out of 5000000
- 58937 multiletter control sequences out of 15000+600000
- 571099 words of font info for 80 fonts, out of 8000000 for 9000
+ 36699 strings out of 473190
+ 870129 string characters out of 5715800
+ 1398109 words of memory out of 5000000
+ 59258 multiletter control sequences out of 15000+600000
+ 573051 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,956b,2318s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -1919,15 +1391,15 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-
-Output written on slideshow.pdf (14 pages, 2047103 bytes).
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
+/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
+/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/l
+ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on slideshow.pdf (17 pages, 2860680 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

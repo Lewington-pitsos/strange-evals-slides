@@ -15,10 +15,14 @@
 \newcommand{\citenum}[1]{{\scriptsize\color{gray!70!black}#1}}
 
 % Table cell helpers for benchmark usage
-% Score-based color: maps [20,100] to red-green gradient at 30% saturation
+% Score-based color: maps [25.8,96.2] via red-yellow-green gradient
 \newcommand{\SC}[1]{%
-  \pgfmathtruncatemacro{\pct}{min(100, max(0, round((#1 - 20) / 0.8)))}%
-  \cellcolor{green!\pct!red!30}#1%
+  \pgfmathsetmacro{\clamped}{min(96.2, max(25.8, #1))}%
+  \pgfmathsetmacro{\pctval}{(\clamped - 25.8) / 0.704}%
+  \pgfmathsetmacro{\finalR}{min(1, 2*(100-\pctval)/100)*0.35 + 0.65}%
+  \pgfmathsetmacro{\finalG}{min(1, 2*\pctval/100)*0.35 + 0.65}%
+  \edef\applycolor{\noexpand\cellcolor[rgb]{\finalR,\finalG,0.65}}%
+  \applycolor #1%
 }
 \newcommand{\N}{\cellcolor{gray!10}{\color{gray!40}--}}
 
@@ -66,44 +70,47 @@
 \end{frame}
 
 % Slide 12 - Benchmark Usage Table
-\begin{frame}{Benchmark Usage -- Top 20}
+\begin{frame}{Benchmark Usage}
 \centering
 \renewcommand{\arraystretch}{1.15}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
  & \rotatebox{45}{\scriptsize MMMU Pro}
- & \rotatebox{45}{\scriptsize CharXiv}
  & \rotatebox{45}{\scriptsize MathVista}
- & \rotatebox{45}{\scriptsize MMMU}
- & \rotatebox{45}{\scriptsize RefCOCO}
  & \rotatebox{45}{\scriptsize AI2D}
- & \rotatebox{45}{\scriptsize DynaMath}
+ & \rotatebox{45}{\scriptsize CharXiv}
+ & \rotatebox{45}{\scriptsize MMMU}
+ & \rotatebox{45}{\scriptsize Video-MME}
+ & \rotatebox{45}{\scriptsize RefCOCO}
+ & \rotatebox{45}{\scriptsize ChartQA}
+ & \rotatebox{45}{\scriptsize DocVQA}
  & \rotatebox{45}{\scriptsize LVBench}
+ & \rotatebox{45}{\scriptsize OCRBench}
+ & \rotatebox{45}{\scriptsize DynaMath}
  & \rotatebox{45}{\scriptsize MLVU}
  & \rotatebox{45}{\scriptsize MMStar}
  & \rotatebox{45}{\scriptsize MVBench}
- & \rotatebox{45}{\scriptsize OCRBench}
  & \rotatebox{45}{\scriptsize RealWorldQA}
  & \rotatebox{45}{\scriptsize VideoMMMU}
  & \rotatebox{45}{\scriptsize BLINK}
  & \rotatebox{45}{\scriptsize Hallusion}
- & \rotatebox{45}{\scriptsize MMBench-dev}
  & \rotatebox{45}{\scriptsize MUIRBENCH}
- & \rotatebox{45}{\scriptsize SimpleVQA}
  & \rotatebox{45}{\scriptsize ZeroBench}
+ & \rotatebox{45}{\scriptsize MMBench-dev}
+ & \rotatebox{45}{\scriptsize SimpleVQA}
  \\
 \hline
-\textbf{GPT-5.5}          & \SC{81.2} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
+\textbf{GPT-5.5}          & \SC{81.2} & \SC{76.0} & \SC{96.2} & \N        & \N        & \SC{71.2} & \N        & \SC{92.1} & \SC{91.5} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
 \hline
-\textbf{Claude Opus 4.7}  & \SC{81.4} & \SC{82.1} & \SC{79.3} & \SC{84.1} & \N        & \SC{94.8} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
+\textbf{Claude Opus 4.7}  & \SC{81.4} & \SC{79.3} & \SC{94.8} & \SC{82.1} & \SC{84.1} & \SC{67.8} & \N        & \SC{88.0} & \SC{93.0} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
 \hline
-\textbf{Qwen3.6-35B-A3B}  & \SC{75.3} & \SC{78.0} & \SC{86.4} & \SC{81.7} & \SC{92.0} & \SC{92.7} & \N        & \SC{71.4} & \SC{86.2} & \N        & \SC{74.6} & \SC{89.4} & \SC{85.3} & \SC{83.7} & \N        & \SC{69.8} & \SC{92.8} & \N        & \SC{58.9} & \SC{34.4} \\
+\textbf{Qwen3.6-35B-A3B}  & \SC{75.3} & \SC{86.4} & \SC{92.7} & \SC{78.0} & \SC{81.7} & \SC{82.5} & \SC{92.0} & \N        & \N        & \SC{71.4} & \SC{89.4} & \N        & \SC{86.2} & \N        & \SC{74.6} & \SC{85.3} & \SC{83.7} & \N        & \SC{69.8} & \N        & \SC{34.4} & \SC{92.8} & \SC{58.9} \\
 \hline
-\textbf{Gemma-4-31B}      & \SC{76.9} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
+\textbf{Gemma-4-31B}      & \SC{76.9} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
 \hline
-\textbf{GLM-4.6V}         & \SC{66.0} & \SC{63.2} & \SC{85.2} & \SC{76.0} & \SC{88.6} & \SC{88.8} & \SC{54.5} & \SC{59.5} & \N        & \SC{75.9} & \N        & \SC{86.5} & \N        & \SC{74.7} & \SC{65.5} & \N        & \N        & \SC{77.1} & \N        & \SC{25.8} \\
+\textbf{GLM-4.6V}         & \SC{66.0} & \SC{85.2} & \SC{88.8} & \SC{63.2} & \SC{76.0} & \N        & \SC{88.6} & \N        & \N        & \SC{59.5} & \SC{86.5} & \SC{54.5} & \N        & \SC{75.9} & \N        & \N        & \SC{74.7} & \SC{65.5} & \N        & \SC{77.1} & \SC{25.8} & \N        & \N        \\
 \hline
-\textbf{InternVL3.5}      & \N        & \SC{48.3} & \SC{82.7} & \SC{77.7} & \SC{92.4} & \SC{87.3} & \SC{46.5} & \SC{67.1} & \SC{78.2} & \SC{77.9} & \SC{76.5} & \SC{907}  & \SC{75.2} & \N        & \SC{61.4} & \SC{57.3} & \N        & \SC{47.5} & \N        & \N        \\
+\textbf{InternVL3.5}      & \N        & \SC{82.7} & \SC{87.3} & \SC{48.3} & \SC{77.7} & \SC{72.9} & \SC{92.4} & \SC{88.0} & \SC{94.9} & \SC{67.1} & \SC{907}  & \SC{46.5} & \SC{78.2} & \SC{77.9} & \SC{76.5} & \SC{75.2} & \N        & \SC{61.4} & \SC{57.3} & \SC{47.5} & \N        & \N        & \N        \\
 \hline
 \end{tabular}%
 }
@@ -214,22 +221,6 @@ The stated goal of MMMU, the most cited vision benchmark, is to understand how c
 \citenum{[2]}
 \end{frame}
 
-% Slide 7 - Comparison table
-\begin{frame}{Comparing Benchmarks}
-\centering
-\vfill
-\begin{tabular}{|l|c|c|}
-\hline
- & \textbf{General Knowledge} & \textbf{Visual Reasoning} \\
-\hline
-MMMU Pro & High & Low \\
-\hline
-ZeroBench & Medium & High \\
-\hline
-\end{tabular}
-\vfill
-\end{frame}
-
 % Slide 8 - MMMU Error Analysis
 \begin{frame}{MMMU Error Analysis (GPT-4V)}
 \centering
@@ -289,9 +280,48 @@ ZeroBench & Medium & High \\
 \citenum{[3, 4]}
 \end{frame}
 
+% Slide - VLMs are Blind: Overview
+\begin{frame}{VLMs are Blind}
+\centering
+\adjustbox{max width=0.85\textwidth, max height=0.85\textheight}{\includegraphics{vlm-are-blind/overview.png}}
+\vfill
+\citenum{[9]}
+\end{frame}
+
+% Slide - VLMs are Blind: Scores
+\begin{frame}{VLMs are Blind}
+\centering
+\adjustbox{max width=0.85\textwidth, max height=0.85\textheight}{\includegraphics{vlm-are-blind/scores.png}}
+\vfill
+\citenum{[9]}
+\end{frame}
+
+% Slide - VLMs are Blind: Later Results
+\begin{frame}{VLMs are Blind}
+\centering
+\adjustbox{max width=0.85\textwidth, max height=0.85\textheight}{\includegraphics{vlm-are-blind/later-results.png}}
+\vfill
+\citenum{[12]}
+\end{frame}
+
+% Slide - VLMs are Biased: Counting
+\begin{frame}{VLMs are Biased}
+\begin{columns}[c]
+\column{0.45\textwidth}
+\centering
+\adjustbox{max width=\textwidth, max height=0.8\textheight}{\includegraphics{vlm-are-blind/chicken.png}}
+
+\column{0.55\textwidth}
+\centering
+{\Large How many legs does this animal have?}
+\end{columns}
+\vfill
+\citenum{[13]}
+\end{frame}
+
 % References
 \begin{frame}{References}
-\small
+\footnotesize
 \begin{enumerate}
 \item Yue et al., ``MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI,'' CVPR 2024.
 \item Roberts et al., ``ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models,'' arXiv:2502.09696, 2025.
@@ -304,6 +334,8 @@ ZeroBench & Medium & High \\
 \item Rahmanzadehgervi et al., ``Vision Language Models Are Blind,'' arXiv:2407.06581, 2024.
 \item Karpathy, ``A Recipe for Training Neural Networks,'' \url{https://karpathy.github.io/2019/04/25/recipe/}, 2019.
 \item Anthropic, ``Introducing Claude Opus 4.7,'' 2026.
+\item OpenAI, ``Introducing o3 and o4-mini,'' 2025.
+\item Vo et al., ``Vision Language Models are Biased,'' arXiv:2505.23941, 2025.
 \end{enumerate}
 \end{frame}
 
