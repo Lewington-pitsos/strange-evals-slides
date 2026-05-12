@@ -15,7 +15,11 @@
 \newcommand{\citenum}[1]{{\scriptsize\color{gray!70!black}#1}}
 
 % Table cell helpers for benchmark usage
-\newcommand{\Y}[1]{\cellcolor{green!15}#1}
+% Score-based color: maps [20,100] to red-green gradient at 30% saturation
+\newcommand{\SC}[1]{%
+  \pgfmathtruncatemacro{\pct}{min(100, max(0, round((#1 - 20) / 0.8)))}%
+  \cellcolor{green!\pct!red!30}#1%
+}
 \newcommand{\N}{\cellcolor{gray!10}{\color{gray!40}--}}
 
 \begin{document}
@@ -68,41 +72,43 @@
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
  & \rotatebox{45}{\scriptsize MMMU Pro}
- & \rotatebox{45}{\scriptsize MMMU}
- & \rotatebox{45}{\scriptsize MathVista}
  & \rotatebox{45}{\scriptsize CharXiv}
+ & \rotatebox{45}{\scriptsize MathVista}
+ & \rotatebox{45}{\scriptsize MMMU}
  & \rotatebox{45}{\scriptsize RefCOCO}
- & \rotatebox{45}{\scriptsize MMStar}
- & \rotatebox{45}{\scriptsize RealWorldQA}
- & \rotatebox{45}{\scriptsize DynaMath}
  & \rotatebox{45}{\scriptsize AI2D}
- & \rotatebox{45}{\scriptsize OCRBench}
- & \rotatebox{45}{\scriptsize MVBench}
- & \rotatebox{45}{\scriptsize MLVU}
+ & \rotatebox{45}{\scriptsize DynaMath}
  & \rotatebox{45}{\scriptsize LVBench}
+ & \rotatebox{45}{\scriptsize MLVU}
+ & \rotatebox{45}{\scriptsize MMStar}
+ & \rotatebox{45}{\scriptsize MVBench}
+ & \rotatebox{45}{\scriptsize OCRBench}
+ & \rotatebox{45}{\scriptsize RealWorldQA}
  & \rotatebox{45}{\scriptsize VideoMMMU}
- & \rotatebox{45}{\scriptsize MMBench-dev}
  & \rotatebox{45}{\scriptsize BLINK}
- & \rotatebox{45}{\scriptsize MUIRBENCH}
  & \rotatebox{45}{\scriptsize Hallusion}
- & \rotatebox{45}{\scriptsize ZeroBench}
+ & \rotatebox{45}{\scriptsize MMBench-dev}
+ & \rotatebox{45}{\scriptsize MUIRBENCH}
  & \rotatebox{45}{\scriptsize SimpleVQA}
+ & \rotatebox{45}{\scriptsize ZeroBench}
  \\
 \hline
-\textbf{GPT-5.5}          & \Y{81.2} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
+\textbf{GPT-5.5}          & \SC{81.2} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
 \hline
-\textbf{Qwen3.6-35B-A3B}  & \Y{75.3} & \Y{81.7} & \Y{86.4} & \Y{78.0} & \Y{92.0} & \N       & \Y{85.3} & \N       & \Y{92.7} & \Y{89.4} & \Y{74.6} & \Y{86.2} & \Y{71.4} & \Y{83.7} & \Y{92.8} & \N       & \N       & \Y{69.8} & \Y{34.4} & \Y{58.9} \\
+\textbf{Claude Opus 4.7}  & \SC{81.4} & \SC{82.1} & \SC{79.3} & \SC{84.1} & \N        & \SC{94.8} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
 \hline
-\textbf{Gemma-4-31B}      & \Y{76.9} & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       & \N       \\
+\textbf{Qwen3.6-35B-A3B}  & \SC{75.3} & \SC{78.0} & \SC{86.4} & \SC{81.7} & \SC{92.0} & \SC{92.7} & \N        & \SC{71.4} & \SC{86.2} & \N        & \SC{74.6} & \SC{89.4} & \SC{85.3} & \SC{83.7} & \N        & \SC{69.8} & \SC{92.8} & \N        & \SC{58.9} & \SC{34.4} \\
 \hline
-\textbf{GLM-4.6V}         & \Y{66.0} & \Y{76.0} & \Y{85.2} & \Y{63.2} & \Y{88.6} & \Y{75.9} & \N       & \Y{54.5} & \Y{88.8} & \Y{86.5} & \N       & \N       & \Y{59.5} & \Y{74.7} & \N       & \Y{65.5} & \Y{77.1} & \N       & \Y{25.8} & \N       \\
+\textbf{Gemma-4-31B}      & \SC{76.9} & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        & \N        \\
 \hline
-\textbf{InternVL3.5}      & \N       & \Y{77.7} & \Y{82.7} & \Y{48.3} & \Y{92.4} & \Y{77.9} & \Y{75.2} & \Y{46.5} & \Y{87.3} & \Y{907}  & \Y{76.5} & \Y{78.2} & \Y{67.1} & \N       & \N       & \Y{61.4} & \Y{47.5} & \Y{57.3} & \N       & \N       \\
+\textbf{GLM-4.6V}         & \SC{66.0} & \SC{63.2} & \SC{85.2} & \SC{76.0} & \SC{88.6} & \SC{88.8} & \SC{54.5} & \SC{59.5} & \N        & \SC{75.9} & \N        & \SC{86.5} & \N        & \SC{74.7} & \SC{65.5} & \N        & \N        & \SC{77.1} & \N        & \SC{25.8} \\
+\hline
+\textbf{InternVL3.5}      & \N        & \SC{48.3} & \SC{82.7} & \SC{77.7} & \SC{92.4} & \SC{87.3} & \SC{46.5} & \SC{67.1} & \SC{78.2} & \SC{77.9} & \SC{76.5} & \SC{907}  & \SC{75.2} & \N        & \SC{61.4} & \SC{57.3} & \N        & \SC{47.5} & \N        & \N        \\
 \hline
 \end{tabular}%
 }
 \vfill
-\citenum{[4, 5, 6, 7, 8]}
+\citenum{[4, 5, 6, 7, 8, 11]}
 \end{frame}
 
 % Slide 3
@@ -122,35 +128,35 @@ The stated goal of MMMU, the most cited vision benchmark, is to understand how c
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/115_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright The diagram above depicts iron filings sprinkled around three permanent magnets. Pole R is the same pole as\par}
+{\fontsize{7.5}{9}\selectfont\raggedright The diagram above depicts iron filings sprinkled around three permanent magnets. Pole R is the same pole as\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Y and Z\\B) X and T\\C) R and T\\D) X and Y\\E) T and Z\\F) T and Y\\G) R and Z\\H) R and Y\\I) X and Z\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/263_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright What is your opinion on the fact that certain large insects act as predators of pests? Are they allies or enemies in your view?\par}
+{\fontsize{7.5}{9}\selectfont\raggedright What is your opinion on the fact that certain large insects act as predators of pests? Are they allies or enemies in your view?\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Neutral; it doesn't affect the crops positively or negatively.\\B) Symbiotic; it has a mutual relationship with the crops.\\C) Vector; it is not a pest directly but spreads viruses which damage yield.\\D) Threat; it may not harm the crops directly, but its presence could attract other pests.\\E) Beneficial; it helps in biological control of pests.\\F) Neither; this large insect is not a problem, nor is it a beneficial.\\G) I don't know and don't want to guess.\\H) Friend; this is clearly a predator of pests.\\I) Foe; this is a pest of crops.\\J) Parasitic; it feeds on the pests but also harms the crops.\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/152_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright Refer to the figure, which term best describes the practice where members create the visual essence of a chapter on a three-foot strip of paper, discuss it, and then assemble the strips into the shape of sun rays?\par}
+{\fontsize{7.5}{9}\selectfont\raggedright Refer to the figure, which term best describes the practice where members create the visual essence of a chapter on a three-foot strip of paper, discuss it, and then assemble the strips into the shape of sun rays?\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Chapter Ray\\B) Story Ray\\C) Narrative Ray\\D) Magical Realism Ray\\E) Plot Ray\\F) Animal Fantasy Ray\\G) Folklore Ray\\H) Trickster Tale Ray\\I) Fiction Ray\\J) Fable Ray\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/354_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright The overall Chi-square value was\par}
+{\fontsize{7.5}{9}\selectfont\raggedright The overall Chi-square value was\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) 1196.29\\B) 1700.21\\C) 1300.54\\D) 1567.34\\E) 1082.76\\F) 1552.34\\G) 1203.82\\H) 1100.65\\I) 987.45\\J) 1356.98\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/402_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright An all-equity firm is considering the following projects: The T-bill rate is 3.5 percent, and the expected return on the market is 11 percent. Which projects would be incorrectly accepted or rejected if the firm's overall cost of capital was used as a hurdle rate?\par}
+{\fontsize{6}{7.2}\selectfont\raggedright An all-equity firm is considering the following projects: The T-bill rate is 3.5 percent, and the expected return on the market is 11 percent. Which projects would be incorrectly accepted or rejected if the firm's overall cost of capital was used as a hurdle rate?\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Project Z would be incorrectly rejected; Project Y would be incorrectly accepted.\\B) Project Z would be incorrectly accepted; Project X would be incorrectly rejected.\\C) Project X would be incorrectly rejected; Project Y would be incorrectly accepted.\\D) Project X would be incorrectly accepted; Project Y would be incorrectly rejected.\\E) No project would be incorrectly rejected; Project X would be incorrectly accepted.\\F) Project Y would be incorrectly rejected; Project X would be incorrectly accepted.\\G) No project would be incorrectly rejected; Project Z would be incorrectly accepted.\\H) Project X would be incorrectly rejected; Project Z would be incorrectly accepted.\\I) Project Y would be incorrectly rejected; Project Z would be incorrectly accepted.\\J) Project Z would be incorrectly rejected; Project X would be incorrectly accepted.\par}
 \end{columns}
@@ -162,35 +168,35 @@ The stated goal of MMMU, the most cited vision benchmark, is to understand how c
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/115_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright The diagram above depicts iron filings sprinkled around three permanent magnets. Pole R is the same pole as\par}
+{\fontsize{7.5}{9}\selectfont\raggedright The diagram above depicts iron filings sprinkled around three permanent magnets. Pole R is the same pole as\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Y and Z\\B) X and T\\C) R and T\\{\color{green!60!black}\textbf{D) X and Y}}\\E) T and Z\\F) T and Y\\G) R and Z\\H) R and Y\\I) X and Z\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/263_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright What is your opinion on the fact that certain large insects act as predators of pests? Are they allies or enemies in your view?\par}
+{\fontsize{7.5}{9}\selectfont\raggedright What is your opinion on the fact that certain large insects act as predators of pests? Are they allies or enemies in your view?\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Neutral; it doesn't affect the crops positively or negatively.\\B) Symbiotic; it has a mutual relationship with the crops.\\C) Vector; it is not a pest directly but spreads viruses which damage yield.\\D) Threat; it may not harm the crops directly, but its presence could attract other pests.\\E) Beneficial; it helps in biological control of pests.\\F) Neither; this large insect is not a problem, nor is it a beneficial.\\G) I don't know and don't want to guess.\\H) Friend; this is clearly a predator of pests.\\{\color{green!60!black}\textbf{I) Foe; this is a pest of crops.}}\\J) Parasitic; it feeds on the pests but also harms the crops.\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/152_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright Refer to the figure, which term best describes the practice where members create the visual essence of a chapter on a three-foot strip of paper, discuss it, and then assemble the strips into the shape of sun rays?\par}
+{\fontsize{7.5}{9}\selectfont\raggedright Refer to the figure, which term best describes the practice where members create the visual essence of a chapter on a three-foot strip of paper, discuss it, and then assemble the strips into the shape of sun rays?\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Chapter Ray\\{\color{green!60!black}\textbf{B) Story Ray}}\\C) Narrative Ray\\D) Magical Realism Ray\\E) Plot Ray\\F) Animal Fantasy Ray\\G) Folklore Ray\\H) Trickster Tale Ray\\I) Fiction Ray\\J) Fable Ray\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/354_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright The overall Chi-square value was\par}
+{\fontsize{7.5}{9}\selectfont\raggedright The overall Chi-square value was\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) 1196.29\\B) 1700.21\\C) 1300.54\\D) 1567.34\\{\color{green!60!black}\textbf{E) 1082.76}}\\F) 1552.34\\G) 1203.82\\H) 1100.65\\I) 987.45\\J) 1356.98\par}
 
 \column{0.19\textwidth}
 \centering
 \adjustbox{max width=\textwidth, max height=1.5cm}{\includegraphics{../brokenevals-vlm/mmmu_pro/examples/402_image_0.png}}\\[0.2em]
-{\fontsize{4.5}{5.4}\selectfont\raggedright An all-equity firm is considering the following projects: The T-bill rate is 3.5 percent, and the expected return on the market is 11 percent. Which projects would be incorrectly accepted or rejected if the firm's overall cost of capital was used as a hurdle rate?\par}
+{\fontsize{6}{7.2}\selectfont\raggedright An all-equity firm is considering the following projects: The T-bill rate is 3.5 percent, and the expected return on the market is 11 percent. Which projects would be incorrectly accepted or rejected if the firm's overall cost of capital was used as a hurdle rate?\par}
 \vspace{0.1em}
 {\fontsize{3}{3.6}\selectfont\raggedright A) Project Z would be incorrectly rejected; Project Y would be incorrectly accepted.\\B) Project Z would be incorrectly accepted; Project X would be incorrectly rejected.\\C) Project X would be incorrectly rejected; Project Y would be incorrectly accepted.\\D) Project X would be incorrectly accepted; Project Y would be incorrectly rejected.\\E) No project would be incorrectly rejected; Project X would be incorrectly accepted.\\F) Project Y would be incorrectly rejected; Project X would be incorrectly accepted.\\G) No project would be incorrectly rejected; Project Z would be incorrectly accepted.\\{\color{green!60!black}\textbf{H) Project X would be incorrectly rejected; Project Z would be incorrectly accepted.}}\\I) Project Y would be incorrectly rejected; Project Z would be incorrectly accepted.\\J) Project Z would be incorrectly rejected; Project X would be incorrectly accepted.\par}
 \end{columns}
@@ -297,6 +303,7 @@ ZeroBench & Medium & High \\
 \item OpenGVLab, ``InternVL3.5 Technical Report,'' 2025.
 \item Rahmanzadehgervi et al., ``Vision Language Models Are Blind,'' arXiv:2407.06581, 2024.
 \item Karpathy, ``A Recipe for Training Neural Networks,'' \url{https://karpathy.github.io/2019/04/25/recipe/}, 2019.
+\item Anthropic, ``Introducing Claude Opus 4.7,'' 2026.
 \end{enumerate}
 \end{frame}
 

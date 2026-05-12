@@ -38,6 +38,12 @@ models = [
         "date_y": -0.28,
     },
     {
+        "name": "Claude Opus 4.7", "sub": "",
+        "date": datetime(2026, 4, 16), "color": "#0891B2",
+        "label_x": datetime(2026, 4, 10), "label_y": 1.8,
+        "date_y": -0.55,
+    },
+    {
         "name": "Qwen3.6", "sub": "27B / 35B-A3B",
         "date": datetime(2026, 4, 16), "color": "#CC8800",
         "label_x": datetime(2026, 3, 5), "label_y": -1.1,
