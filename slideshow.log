@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.17)  12 MAY 2026 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.17)  12 MAY 2026 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1161,76 +1161,86 @@ thkerncmss.
 [2
 
 ]
+<motivating.png, id=30, 1051.93pt x 787.94376pt>
+File: motivating.png Graphic file (type png)
+<use motivating.png>
+Package pdftex.def Info: motivating.png  used on input line 56.
+(pdftex.def)             Requested size: 1051.92743pt x 787.94183pt.
+
 
 [3
 
-]
-<timeline.png, id=35, 983.95605pt x 297.39105pt>
-File: timeline.png Graphic file (type png)
-<use timeline.png>
-Package pdftex.def Info: timeline.png  used on input line 70.
-(pdftex.def)             Requested size: 983.95366pt x 297.39032pt.
-
+ <./motivating.png>]
 
 [4
 
- <./timeline.png>]
+]
+<timeline.png, id=43, 983.95605pt x 297.39105pt>
+File: timeline.png Graphic file (type png)
+<use timeline.png>
+Package pdftex.def Info: timeline.png  used on input line 76.
+(pdftex.def)             Requested size: 983.95366pt x 297.39032pt.
+
 
 [5
 
-]
+ <./timeline.png>]
 
 [6
 
 ]
-<../brokenevals-vlm/mmmu_pro/examples/115_image_0.png, id=54, 367.3725pt x 264.
+
+[7
+
+]
+<../brokenevals-vlm/mmmu_pro/examples/115_image_0.png, id=62, 367.3725pt x 264.
 99pt>
 File: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png  
-used on input line 170.
+used on input line 176.
 (pdftex.def)             Requested size: 367.37158pt x 264.98935pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 170.
+(Font)              size <7> substituted on input line 176.
 
-<../brokenevals-vlm/mmmu_pro/examples/263_image_0.png, id=55, 390.45876pt x 401
+<../brokenevals-vlm/mmmu_pro/examples/263_image_0.png, id=63, 390.45876pt x 401
 .5pt>
 File: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png  
-used on input line 170.
+used on input line 176.
 (pdftex.def)             Requested size: 390.4578pt x 401.49901pt.
-<../brokenevals-vlm/mmmu_pro/examples/152_image_0.png, id=56, 250.9375pt x 226.
+<../brokenevals-vlm/mmmu_pro/examples/152_image_0.png, id=64, 250.9375pt x 226.
 8475pt>
 File: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png  
-used on input line 170.
+used on input line 176.
 (pdftex.def)             Requested size: 250.93687pt x 226.84694pt.
-<../brokenevals-vlm/mmmu_pro/examples/354_image_0.png, id=57, 966.61125pt x 292
+<../brokenevals-vlm/mmmu_pro/examples/354_image_0.png, id=65, 966.61125pt x 292
 .09125pt>
 File: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png  
-used on input line 170.
+used on input line 176.
 (pdftex.def)             Requested size: 966.6089pt x 292.09052pt.
-<../brokenevals-vlm/mmmu_pro/examples/402_image_0.png, id=58, 410.53375pt x 183
+<../brokenevals-vlm/mmmu_pro/examples/402_image_0.png, id=66, 410.53375pt x 183
 .68625pt>
 File: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png  
-used on input line 170.
+used on input line 176.
 (pdftex.def)             Requested size: 410.53275pt x 183.68578pt.
 
 
-[7
+[8
 
  <../brokenevals-vlm/mmmu_pro/examples/115_image_0.png> <../brokenevals-vlm/mmm
 u_pro/examples/263_image_0.png (PNG copy)> <../brokenevals-vlm/mmmu_pro/example
@@ -1241,119 +1251,119 @@ File: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/115_image_0.png  
-used on input line 210.
+used on input line 216.
 (pdftex.def)             Requested size: 367.37158pt x 264.98935pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/263_image_0.png  
-used on input line 210.
+used on input line 216.
 (pdftex.def)             Requested size: 390.4578pt x 401.49901pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/152_image_0.png  
-used on input line 210.
+used on input line 216.
 (pdftex.def)             Requested size: 250.93687pt x 226.84694pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/354_image_0.png  
-used on input line 210.
+used on input line 216.
 (pdftex.def)             Requested size: 966.6089pt x 292.09052pt.
 File: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png Graphic file (type p
 ng)
 <use ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png>
 Package pdftex.def Info: ../brokenevals-vlm/mmmu_pro/examples/402_image_0.png  
-used on input line 210.
+used on input line 216.
 (pdftex.def)             Requested size: 410.53275pt x 183.68578pt.
-
-
-[8
-
-]
-<zerobench_geese.jpeg, id=70, 3337.46875pt x 2503.3525pt>
-File: zerobench_geese.jpeg Graphic file (type jpg)
-<use zerobench_geese.jpeg>
-Package pdftex.def Info: zerobench_geese.jpeg  used on input line 222.
-(pdftex.def)             Requested size: 3337.46066pt x 2503.3464pt.
 
 
 [9
 
- <./zerobench_geese.jpeg>]
-<mmmu_error_analysis.jpeg, id=76, 303.35333pt x 243.73058pt>
-File: mmmu_error_analysis.jpeg Graphic file (type jpg)
-<use mmmu_error_analysis.jpeg>
-Package pdftex.def Info: mmmu_error_analysis.jpeg  used on input line 234.
-(pdftex.def)             Requested size: 303.35258pt x 243.72998pt.
+]
+<zerobench_geese.jpeg, id=77, 3337.46875pt x 2503.3525pt>
+File: zerobench_geese.jpeg Graphic file (type jpg)
+<use zerobench_geese.jpeg>
+Package pdftex.def Info: zerobench_geese.jpeg  used on input line 228.
+(pdftex.def)             Requested size: 3337.46066pt x 2503.3464pt.
 
 
 [10
 
- <./mmmu_error_analysis.jpeg>]
-Package pgfplots info on input line 281: Using 'lua backend=false' for axis: x 
-coord trafo unsupported.
+ <./zerobench_geese.jpeg>]
+<mmmu_error_analysis.jpeg, id=83, 303.35333pt x 243.73058pt>
+File: mmmu_error_analysis.jpeg Graphic file (type jpg)
+<use mmmu_error_analysis.jpeg>
+Package pdftex.def Info: mmmu_error_analysis.jpeg  used on input line 240.
+(pdftex.def)             Requested size: 303.35258pt x 243.72998pt.
 
 
 [11
 
-]
-<vlm-are-blind/overview.png, id=88, 755.82375pt x 726.715pt>
-File: vlm-are-blind/overview.png Graphic file (type png)
-<use vlm-are-blind/overview.png>
-Package pdftex.def Info: vlm-are-blind/overview.png  used on input line 289.
-(pdftex.def)             Requested size: 755.8219pt x 726.71321pt.
-
-Overfull \vbox (1.66776pt too high) detected at line 289
- []
-
+ <./mmmu_error_analysis.jpeg>]
+Package pgfplots info on input line 287: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
 
 
 [12
 
- <./vlm-are-blind/overview.png>]
-<vlm-are-blind/scores.png, id=95, 421.575pt x 192.72pt>
-File: vlm-are-blind/scores.png Graphic file (type png)
-<use vlm-are-blind/scores.png>
-Package pdftex.def Info: vlm-are-blind/scores.png  used on input line 297.
-(pdftex.def)             Requested size: 421.57396pt x 192.71951pt.
+]
+<vlm-are-blind/overview.png, id=95, 755.82375pt x 726.715pt>
+File: vlm-are-blind/overview.png Graphic file (type png)
+<use vlm-are-blind/overview.png>
+Package pdftex.def Info: vlm-are-blind/overview.png  used on input line 295.
+(pdftex.def)             Requested size: 755.8219pt x 726.71321pt.
 
-
-[13
-
- <./vlm-are-blind/scores.png>]
-<vlm-are-blind/later-results.png, id=103, 781.92125pt x 551.05875pt>
-File: vlm-are-blind/later-results.png Graphic file (type png)
-<use vlm-are-blind/later-results.png>
-Package pdftex.def Info: vlm-are-blind/later-results.png  used on input line 30
-5.
-(pdftex.def)             Requested size: 781.91934pt x 551.05739pt.
-
-Overfull \vbox (1.6745pt too high) detected at line 305
+Overfull \vbox (1.66776pt too high) detected at line 295
  []
 
 
 
+[13
+
+ <./vlm-are-blind/overview.png>]
+<vlm-are-blind/scores.png, id=103, 421.575pt x 192.72pt>
+File: vlm-are-blind/scores.png Graphic file (type png)
+<use vlm-are-blind/scores.png>
+Package pdftex.def Info: vlm-are-blind/scores.png  used on input line 303.
+(pdftex.def)             Requested size: 421.57396pt x 192.71951pt.
+
+
 [14
 
- <./vlm-are-blind/later-results.png>]
-<vlm-are-blind/chicken.png, id=110, 316.18124pt x 580.1675pt>
-File: vlm-are-blind/chicken.png Graphic file (type png)
-<use vlm-are-blind/chicken.png>
-Package pdftex.def Info: vlm-are-blind/chicken.png  used on input line 320.
-(pdftex.def)             Requested size: 316.18047pt x 580.16606pt.
+ <./vlm-are-blind/scores.png>]
+<vlm-are-blind/later-results.png, id=110, 781.92125pt x 551.05875pt>
+File: vlm-are-blind/later-results.png Graphic file (type png)
+<use vlm-are-blind/later-results.png>
+Package pdftex.def Info: vlm-are-blind/later-results.png  used on input line 31
+1.
+(pdftex.def)             Requested size: 781.91934pt x 551.05739pt.
+
+Overfull \vbox (1.6745pt too high) detected at line 311
+ []
+
 
 
 [15
 
- <./vlm-are-blind/chicken.png>]
+ <./vlm-are-blind/later-results.png>]
+<vlm-are-blind/chicken.png, id=117, 316.18124pt x 580.1675pt>
+File: vlm-are-blind/chicken.png Graphic file (type png)
+<use vlm-are-blind/chicken.png>
+Package pdftex.def Info: vlm-are-blind/chicken.png  used on input line 326.
+(pdftex.def)             Requested size: 316.18047pt x 580.16606pt.
+
 
 [16
 
-]
+ <./vlm-are-blind/chicken.png>]
 
 [17
+
+]
+
+[18
 
 ]
 \tf@nav=\write6
@@ -1379,10 +1389,10 @@ Package rerunfilecheck Info: File `slideshow.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36699 strings out of 473190
- 870129 string characters out of 5715800
+ 36708 strings out of 473190
+ 870294 string characters out of 5715800
  1398109 words of memory out of 5000000
- 59258 multiletter control sequences out of 15000+600000
+ 59265 multiletter control sequences out of 15000+600000
  573051 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,956b,2318s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1396,10 +1406,10 @@ local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
 /local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
 /local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slideshow.pdf (17 pages, 2860680 bytes).
+Output written on slideshow.pdf (18 pages, 3631749 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
