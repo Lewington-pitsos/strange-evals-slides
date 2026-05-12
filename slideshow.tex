@@ -7,6 +7,7 @@
 \usepackage{colortbl}
 \usepackage{hyperref}
 \usepackage{pgfplots}
+\usepackage{qrcode}
 \pgfplotsset{compat=1.18}
 
 \setbeamertemplate{navigation symbols}{}
@@ -286,6 +287,51 @@ The stated goal of MMMU, the most cited vision benchmark, is to understand how c
 \citenum{[3, 4]}
 \end{frame}
 
+% Slide - MathVista: Overview
+\begin{frame}{MathVista}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\begin{itemize}
+\item Composition of 28 existing benchmarks + 3 newly created ones
+\item Designed to test mathematical reasoning in visual contexts (broadly defined)
+\item 6,141 examples
+\item Human performance is 60.3\%, worse than leading VLMs today
+\end{itemize}
+
+\column{0.45\textwidth}
+\centering
+\adjustbox{max width=\textwidth, max height=0.7\textheight}{\includegraphics{mathvista.png}}
+\end{columns}
+\vfill
+\citenum{[14]}
+\end{frame}
+
+% Slide - MathVista: 3 Random Examples
+\begin{frame}{MathVista -- 3 Random Examples}
+\begin{columns}[T]
+\column{0.31\textwidth}
+\centering
+\adjustbox{max width=\textwidth, max height=3cm}{\includegraphics{../brokenevals-vlm/mathvista/examples/042_image_0.png}}\\[0.3em]
+{\fontsize{8}{9.6}\selectfont\raggedright Complete the matrix.\par}
+\vspace{0.2em}
+{\fontsize{5}{6}\selectfont\raggedright A) A\\ B) B\\ C) C\\ D) D\\ E) E\\ F) F\par}
+
+\column{0.31\textwidth}
+\centering
+\adjustbox{max width=\textwidth, max height=3cm}{\includegraphics{../brokenevals-vlm/mathvista/examples/271_image_0.png}}\\[0.3em]
+{\fontsize{8}{9.6}\selectfont\raggedright What is the total percentage of people who say that they do either less or more often than the usual amount of exercise during the coronavirus pandemic in the United States as of April 2020?\par}
+
+\column{0.31\textwidth}
+\centering
+\adjustbox{max width=\textwidth, max height=3cm}{\includegraphics{../brokenevals-vlm/mathvista/examples/388_image_0.png}}\\[0.3em]
+{\fontsize{8}{9.6}\selectfont\raggedright Find $JQ$ if $Q$ is the incenter of $\triangle JLN$. Rounded to the nearest hundredth.\par}
+\vspace{0.2em}
+{\fontsize{5}{6}\selectfont\raggedright A) 16.50\\ B) 18.79\\ C) 20.32\\ D) 25.50\par}
+\end{columns}
+\vfill
+\citenum{[14]}
+\end{frame}
+
 % Slide - VLMs are Blind: Overview
 \begin{frame}{VLMs are Blind}
 \centering
@@ -342,6 +388,7 @@ The stated goal of MMMU, the most cited vision benchmark, is to understand how c
 \item Anthropic, ``Introducing Claude Opus 4.7,'' 2026.
 \item OpenAI, ``Introducing o3 and o4-mini,'' 2025.
 \item Vo et al., ``Vision Language Models are Biased,'' arXiv:2505.23941, 2025.
+\item Lu et al., ``MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts,'' arXiv:2310.02255, 2023.
 \end{enumerate}
 \end{frame}
 
@@ -350,6 +397,20 @@ The stated goal of MMMU, the most cited vision benchmark, is to understand how c
 \begin{itemize}
 \item \href{https://datasets-server.huggingface.co/rows?dataset=MMMU\%2FMMMU\_Pro&config=standard+\%2810+options\%29&split=test&offset=476&length=1}{Proof the sun-ray task actually exists with that phrasing}
 \end{itemize}
+\end{frame}
+
+% Till Next Time
+\begin{frame}
+\centering
+\vfill
+{\Huge Till Next Time}
+
+\vspace{1.5em}
+\qrcode[height=4cm]{https://luma.com/0kzgr7ku}
+
+\vspace{1em}
+{\normalsize lewingtonpitsos@gmail.com}
+\vfill
 \end{frame}
 
 \end{document}
